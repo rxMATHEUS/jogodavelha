@@ -1,112 +1,121 @@
+/* ------------------------------------------------------------------------------------------------- */
 /* Estilos comuns */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0; /* Define a margem de todos os elementos como zero */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Define fonte Verdana */
 }
 
 /* Define as propriedades padrão para todos os elementos,
-   incluindo margem, preenchimento, modelo de caixa e família de fontes. */
+   estipulando a margem e a fonte */
 
 body {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #222; /* Cor de fundo */
+    height: 100vh; /* Altura do body da página */
+    display: flex; /* Define um display flexível para alinhar os elementos */
+    align-items: center; /* Centraliza verticalmente dentro do body */
+    justify-content: center; /* Centraliza horizontalmente dentrod do body */
+    background: #222; /* Cor de fundo escura */
 }
 
-/* Estilo para o corpo da página, centralizando o conteúdo na tela,
-   definindo uma cor de fundo escura. */
+/* Estilo para o body (corpo) da página, centralizando o conteúdo no meio da tela,
+   definindo uma cor de fundo escura */
 
    main {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+    display: flex; /* Define um display flexível para alinhar os elementos */
+    flex-direction: column; /* Define a direção dos elementos como uma coluna, visando empilhar verticalmente */
+    gap: 5px; /* Espaçamento de 5 pixels entre os elementos */
 }
 
 /* Define o layout do elemento principal como uma coluna,
-   com um espaçamento entre os filhos de 5 pixels. */
+   com um espaçamento de 5 pixels */
 
-h1, h2 {
-    text-align: center;
-    color: #fff; /* Cor do texto */
+h1 {
+    text-align: center; /* Centraliza todos os elementos h1 e h2 */
+    font-size: 34px; /* Define o tamanho da fonte como 24 pixels */
+    color: white; /* Cor do texto branca */
 }
 
-/* Define o texto centralizado e a cor do texto clara para os títulos. */
+h2 {
+    text-align: center; /* Centraliza todos os elementos h1 e h2 */
+    font-size: 24px; /* Define o tamanho da fonte como 24 pixels */
+    color: white; /* Cor do texto branca */
+}
+
+/* Define o texto centralizado e a cor do texto clara para os títulos */
 
 hr {
-    font-weight: bold;
-    height: 3px;
-    background: #fff; /* Cor da linha */
-    margin-bottom: 10px;
+    font-weight: bold; /* Define a linha para negrito */
+    height: 3px; /* Define a altura da linha em 3 pixels */
+    background: white; /* Cor da linha branca */
+    margin-bottom: 10px; /* Define uma margem inferior de 10 pixels, 
+                        visando separar a linhda da div de "game" (.game) */
 }
 
 /* Estilo para a linha horizontal, definindo uma cor de fundo clara,
    altura de 3 pixels, e uma margem inferior de 10 pixels. */
 
 .game {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: grid; /* Define o layout como uma grade, para organizar em linhas e colunas */
+    grid-template-columns: 1fr 1fr 1fr; /* Define três colunas de largura igual, destribuindo o espaço igualmente */
 }
 
-/* Estilo para o contêiner do jogo, definindo um layout de grade com três colunas. */
+/* Estilo para a div game, definindo um layout de grade com três colunas */
 
-.game button {
-    width: 100px;
-    height: 100px;
-    margin: 5px;
-    cursor: pointer;
-    font-size: 50px;
+.game button { 
+    width: 100px; /* Define a largura dos botões */
+    height: 100px; /* Define a altura dos botões */
+    margin: 5px; /* Define a margem dos botões */
+    cursor: pointer; /* Mostra para o cursor do mouse que os botões são clicáveis */
+    font-size: 70px; /* Define o tamanho do "X" e "O" */
     background: #333; /* Cor de fundo dos botões */
-    border: 2px solid #fff; /* Cor da borda dos botões */
-    color: #fff; /* Cor do texto nos botões */
+    border: 2px solid #fff; /* Tamanho e Cor da borda dos botões */
+    color: #fff; /* Cor do "X" e "O" */
 }
 
 /* Estilo para os botões do jogo, definindo tamanho, margem, cursor,
-   tamanho da fonte, cor de fundo e borda, e cor do texto. */
+   tamanho da fonte, cor de fundo e borda, e cor do texto */
 
 #message {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #f5ed04;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    font-size: 24px; /* Define o tamanho da fonte como 24 pixels */
+    color: #f5ed04; /* Define a cor amarela para a mensagem */
 }
 
 /* Estilo para a mensagem de resultado do jogo, centralizando o texto, definindo
-   o tamanho da fonte e uma cor amarela. */
+   o tamanho da fonte e uma cor amarela */
 
 #score {
-    text-align: center;
-    font-size: 18px;
-    margin-bottom: 10px;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    font-size: 18px; /* Define o tamanho da fonte como 18 pixels */
+    margin-bottom: 10px; /* Define uma margem inferior de 10 pixels */
 }
 
 /* Estilo para o placar, centralizando o texto, definindo o tamanho da fonte
-   e uma margem inferior de 10 pixels. */
+   e uma margem inferior de 10 pixels */
 
-#reset, #resetScore, #resetScoreAndGame {
-    display: block;
-    margin: 0 auto;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+#reset, #resetScoreAndGame {
+    display: block; /* Define os layouts dos botões como bloco */
+    margin: 5px; /* Define o tamanho da margem dos botões */
+    margin-bottom: 0px; /* Define o tamanho da margem inferior dos botões */
+    padding: 10px; /* Define a altura e largura dos botões */
+    font-size: 20px; /* Define o tamanho da fonte */
+    cursor: pointer; /* Mostra os botões como clicáveis */
+    background-color: #52bf56c7; /* Define a cor de fundo dos botões */
+    color: rgb(255, 255, 255); /* Define a cor do texto nos botões */
+    border: none; /* Remove as bordas dos Botões */
+    border-radius: 10px; /* Arredonda a borda dos botões */
+    transition: background-color 0.3s; /* Define a transição pro hover em 3s */
 }
 
-/* Estilo para os botões de reset e reinício, definindo o layout como bloco,
+/* Estilo para os botões de resetar o placar e reiniciar, definindo o layout como bloco,
    centralizando horizontalmente, definindo preenchimento, cursor, cor de fundo,
    cor do texto, borda e borda arredondada. Inclui uma transição suave na mudança
    da cor de fundo. */
 
-#reset:hover, #resetScore:hover, #resetScoreAndGame:hover {
-    background-color: #417943;
+#reset:hover, #resetScoreAndGame:hover {
+    background-color: #417943; /* Define uma cor para a transição dos botões reset e reinício */
 }
 
-/* Estilo de foco para os botões de reset e reinício quando o mouse estiver sobre eles,
+/* Estilo de foco para os botões de resetar o placar e reiniciar quando o mouse estiver sobre eles,
    mudando a cor de fundo para uma tonalidade mais escura de verde. */
+
+/* ------------------------------------------------------------------------------------------------- */
