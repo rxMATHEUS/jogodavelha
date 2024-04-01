@@ -3,7 +3,7 @@
 
 # Sobre o projeto
 
-Este projeto é uma página web construída para concluir os requisitos estipulados pela Profª Priscila Silva Martins, na Matéria de Inteligência Artificial, lecionada na Universidade Federal de Mato Grosso do Sul.
+Este projeto é uma página web construída para concluir os requisitos estipulados pela Profª Priscila Silva Martins, na disciplina de Inteligência Artificial, lecionada na Universidade Federal de Mato Grosso do Sul.
 
 A página WEB consiste em uma implementação de um algoritmo MiniMax, onde os cenários possíveis do jogo da velha é identificado pela IA, que por sua vez escolhe aquele que mais a favorece.
 
