@@ -1,19 +1,19 @@
+<!-- ------------------------------------------------------------------------------------------------- -->
+
 <!DOCTYPE html>
 <!-- 
     Realizado por Matheus da Silva Souza 
     RGA: 2022.0803.017-3
 -->
 
-<html lang="por">
-<head>
+<head> 
+<!-- Contém metadados, icone da página e link para a estilização (css) -->
+
   <meta charset="UTF-8">
   <!-- Define o conjunto de caracteres como UTF-8 -->
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- Define a versão do Internet Explorer -->
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Define a largura da viewport -->
+  <link rel="shortcut icon" href="ico/jogodavelha.ico.ico" type="image/x-icon">
+  <!-- Define o ícone da página -->
 
   <title>Jogo da Velha - Matheus</title>
   <!-- Define o título da página -->
@@ -23,20 +23,23 @@
 
 </head>
 
-<body>
+<body> 
+<!-- Define tudo que será visível na página -->
 
-  <main>
+
+  <main> 
+  <!-- Seção principal do conteúdo da página -->
 
     <h1>JOGO DA VELHA</h1>
     <!-- Título principal -->
 
     <hr />
-    <!-- Linha horizontal -->
+    <!-- Define uma linha horizontal, que serve como uma divisão entre as seções -->
 
     <div class="game">
-      <!-- Contêiner do jogo -->
+      <!-- Define uma divisão e cria a classe "game" -->
       
-      <!-- Botões representando as células do tabuleiro -->
+      <button data-i="0"></button>
       <button data-i="1"></button>
       <button data-i="2"></button>
       <button data-i="3"></button>
@@ -45,13 +48,14 @@
       <button data-i="6"></button>
       <button data-i="7"></button>
       <button data-i="8"></button>
-      <button data-i="9"></button>
+      <!-- Cria botões representando as células do tabuleiro -->
+
     </div>
     
     <h2 id="message"></h2>
     <!-- Mensagem para exibir o resultado do jogo -->
 
-    <h2> Placar:</h2>
+    <h2> Placar: </h2>
     <!-- Título para o placar -->
 
     <h2 id="score">Usuário: 0 - IA: 0 - Empates: 0</h2>
@@ -70,3 +74,4 @@
 
 </body>
 </html>
+<!-- ------------------------------------------------------------------------------------------------- -->
